@@ -1,0 +1,12 @@
+body{
+     font-family: roboto, lato important;
+     font-size : large;
+}
+
+.logo{
+    height: 43px;
+}
+
+.navbar-brand{
+    padding: 0px;
+}
