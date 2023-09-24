@@ -1,8 +1,11 @@
-body{
-     font-family: roboto, lato !important;
-     font-size : large;
+*{
+    overflow: auto;
+    color: black;
 }
-
+body {
+    font-family: Roboto, Lato, sans-serif;
+    font-size: large;
+}
 .logo{
     height: 43px;
 }
@@ -11,6 +14,16 @@ ul{
 }
 li{
     display:inline-block;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
 }
 .navbar-brand{
     font-size: 27px;
@@ -36,3 +49,50 @@ li.nav-item{
     cursor: pointer;
 }
 
+.keyboard-img{
+    height: 10%;
+    width: 10%;
+
+}
+.sigin-image{
+    height: 100%;
+    width: 100%;
+    border: 25px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn{
+    color: #01796b;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+textarea:focus, input:focus{
+    outline: none !important; 
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.justify-content-start{
+    justify-content: flex-start; 
+}
+
+.jumbotron{
+    background-image: linear-gradient(to bottom,rgb(56, 142, 158), rgb(62, 143, 77));
+}

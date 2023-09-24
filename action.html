@@ -5,40 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create or Join Meeting</title>
     <link rel="stylesheet" href="public/Assets/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <linK rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
     <link rel="stylesheet" href="public/Assets/css/style.css">
 </head>
-<body>
+<body style="padding-top: 3.5rem;">
     <nav class="navbar navbar-expand-md fixed-top">
-    <img src="public/Assets/images/sanchar logo black.png" alt="" class="logo">
-    <div class="collapse navbar-collapse">
-        <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">How it works</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">plan and price</a>
-            </li> 
-
-        </ul> -->
-        <span>
-            <ul class="navbar-nav mr-0">
-                <li class="nav-item sign-in display-center">
-                    <a href="#" class="nav-link">Sign in</a>
-                </li>
-                <li class= "nav-item">
-                    <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold">Join the meeting</button>
-                </li>
-                <li class="nav-item">
-                    <button class="btn btn-info btn-lg text-light text-info font-weight-bold">Start a meeting</button>
-                </li> 
-            </ul>
-        </span>
-        
-    </div>
+        <img src="public/Assets/images/sanchar logo black.png" alt="" class="logo">
+        <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-0">
+                    <li class="nav-item sign-in display-center">
+                        <a href="#" class="nav-link">Sign in</a>
+                    </li>
+                    <li class= "nav-item">
+                        <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold">Join the meeting</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-info btn-lg text-light text-info font-weight-bold">Start a meeting</button>
+                    </li> 
+                </ul>
+        </div>
     </nav>
+    <main style="margin-top: 2%;">
+        <div class="jumbotron h-100 d-flex">
+            <div class="container w-50">
+                <h1>AICTE Meeting Room </h1>
+                <ul class="display-center justify-content-start">
+                    <li class="new-meeting" style="margin-right: 10px;">
+                        <button class="btn btn-lg 
+                        text-light font-weight-bold display-center" 
+                        style="background-color: #01796b;"><span
+                         class="material-icons mr-2"></span>New Meeting</button>
+                    </li>
+
+                    <li style="padding-left: 1px; padding-right: 1px;">
+                        <span class="material-icons mr-2"></span>
+                        <input type="text" placeholder="Enter a Link" style="border: 1px solid black; margin-right: 0%;height: 3rem; border-radius: 4px;">
+                    </li>
+
+                    <li class="text-dark pl-4 font-weight-bold
+                    cursor-pointer">Join</li>
+                        
+                    
+                </ul>
+            </div>
+            <div class="container w-50">
+                <img src="https://lh3.googleusercontent.com/g6WWfSMs3V0w2hhsaoc9myxQXmfO3IcRPwIsSo7nUJkNDHFb2JT4bffBiNH50_seojxYfC3AfBz8xNHd5k7tqXVsjRVvHGfJfAPx-zz8Lk7EQ0cPuA=v1-w960" alt="" class="sigin-image">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
