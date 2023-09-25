@@ -18,10 +18,10 @@
                         <a href="#" class="nav-link">Sign in</a>
                     </li>
                     <li class= "nav-item">
-                        <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold">Join the meeting</button>
+                        <button class="btn btn-outline-secondary btn-lg text-info font-weight-bold join-meeting">Join the meeting</button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-info btn-lg text-light text-info font-weight-bold">Start a meeting</button>
+                        <button class="btn btn-info btn-lg text-light text-info font-weight-bold new-meeting">Start a meeting</button>
                     </li> 
                 </ul>
         </div>
@@ -40,11 +40,11 @@
 
                     <li style="padding-left: 1px; padding-right: 1px;">
                         <span class="material-icons mr-2"></span>
-                        <input type="text" placeholder="Enter a code" style="border: 1px solid black; margin-right: 0%;height: 3rem; border-radius: 4px;">
+                        <input type="text" class="enter-code" placeholder="Enter a code" style="border: 1px solid black; margin-right: 0%;height: 3rem; border-radius: 4px;">
                     </li>
 
-                    <li class="text-dark pl-4 font-weight-bold
-                    cursor-pointer">Join</li>
+                    <li class="text-dark pl-2 font-weight-bold
+                    cursor-pointer join-action">Join</li>
                         
                     
                 </ul>
@@ -57,5 +57,28 @@
     <footer class="container">
         <h6>Learn more about <span class="learn-more text-info">Sanchar</span></h6>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(document).on('click', '.join-meeting', function(){
+                $(".enter-code").focus();
+            })
+            $(document).on('click', '.new-meeting', function(){
+                const generateRandomString = (length) => {
+                    let result = '';
+                    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                    const charactersLength = characters.length;
+                    for (let i = 0; i < length; i++){
+                            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                        }
+                    return result;
+                };
+                var eight_d_value = generateRandomString(64);
+                var join_value = $('.enter-code').val();
+                var meetingUrl = window.location.origin+"?meetingID="+eight_d_value;
+                window.location.replace(meetingUrl);
+            })
+        })
+    </script>
 </body>
 </html>
